@@ -25,7 +25,7 @@ try:
             data = json.loads(line)
             rule_counts[data.get("rule", "Bilinmeyen")] += 1
             severity_counts[data.get("severity", "Bilinmeyen")] += 1
-            ip_counts[data.get("ip", "Bilinmeyen")] += 1
+            ip_counts[data.get("source_ip", "Bilinmeyen")] += 1
 
         print(" TEHDİT TÜRLERİ (KURAL BAZLI):")
         for rule, count in rule_counts.items():
