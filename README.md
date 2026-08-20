@@ -1,21 +1,20 @@
-# Mini-SIEM: Canli log analizi ve Tehdit Avciligi
-Bu proje,Linux sistemlerindeki kimlik dogrulama loglarini ('/var/log/auth.log') canli olarak izeyen,Regex ile IP tespiti yapan ve supheli guvenlik olaylarini kategorize ederek alarm ureten Python tabanli bir **SOC Tehdit Tespit Mekanizmasidir**
+#  Mini-SIEM v2.0 (Active Defense & Log Analysis System)
 
-##Ozellikler
+##  Overview
+Mini-SIEM is a custom-built, lightweight Security Information and Event Management (SIEM) tool written entirely in Python. Designed for Linux environments (Ubuntu), it acts as an Active Intrusion Prevention System (IPS) by dynamically reading system logs, detecting anomalies, and automatically banning malicious actors using UFW.
 
-1.SSH Brute-Force Tespiti (Critical):Belirli bir IP adresinden gelen basarisiz giris denemelerini IP bazli olarak takip eder.Esik deger(3) asildiginda kritik alarm uretir.
+##  Key Features
+*   **Live Tail Engine:** Continuously monitors `/var/log/auth.log` in real-time without memory bloat.
+*   **Dynamic Rule Engine:** Uses a flexible `rules.json` file powered by Regex to detect threats (SSH Brute Force, SQL Injection, Port Scans, etc.).
+*   **Active Defense (IPS):** Integrates directly with Linux UFW. If an IP violates rules 3 times, it automatically issues a network-level ban.
+*   **Threat Database:** Logs all parsed alerts into a structured `alerts.json` format, mapped to **MITRE ATT&CK** framework IDs.
+*   **Shift-End Reporting:** Includes an independent `report.py` module to generate a clean, statistical dashboard of all detected threats and aggressive IP addresses.
 
-2.SQL Injection Tespiti (High):Log akisinda gecen 'UnionSelect','OR 1=1' gibi veri tabani sizma kaliplarini anlik olarak yakalar.
+##  Tech Stack
+*   **Language:** Python 3
+*   **OS/Environment:** Linux (Ubuntu 22.04)
+*   **Security Tools:** UFW (Uncomplicated Firewall), Regex
+*   **Data Format:** JSON
 
-3.Port Tarama / Nmap TEspiti(Medium):Ag taramasi ve kesif aktivitelerine ait izleri tespit eder.
-
-
-##Kurulum ve Calistirma
-
-Projeyi klonlayip calistirmak icin:
-
-'''bash
-git clone [https://github.com/zeynalovmushfig-rgb/Mini-SIEM.git](https://github.com/zeynalovmushfig-rgb/Mini-SIEM.git)
-cd Mini-SIEM
-sudo python3 siem.py
-
+##  Why I Built This?
+I built this project to move beyond theoretical SOC analysis. Instead of just reading logs on platforms, I wanted to understand the core mechanics of how a SIEM parses data and how an IPS takes automated action against threats.
