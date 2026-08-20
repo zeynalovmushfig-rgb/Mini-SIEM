@@ -42,8 +42,7 @@ def generate_alert(rule_name, severity, source_ip, mitre_id):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     alert_data = {
-        "id": alert_id, "time": timestamp, "severity": severity,
-        "rule": rule_name, "mitre": mitre_id, "ip": source_ip
+        "alert_id": alert_id, "timestamp": timestamp,"severity":severity,"rule":rule_name,"mitre_tactic":mitre_id,"source_ip":source_ip
     }
     
     print(f" [{severity}] {alert_id} | MITRE: {mitre_id} | IP: {source_ip} | Kural: {rule_name}")
