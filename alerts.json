@@ -1,0 +1,21 @@
+{"alert_id": "ALERT-0001", "timestamp": "2026-08-17 19:23:25", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre_tactic": "T1110", "source_ip": "192.168.1.105", "details": "TArget USer:root"}
+{"alert_id": "ALERT-0002", "timestamp": "2026-08-17 19:23:25", "severity": "HIGH", "rule": "SQL Injection", "mitre_tactic": "T1190", "source_ip": "127.0.0.1", "details": "Payload: ' OR '1'='1"}
+{"alert_id": "ALERT-0003", "timestamp": "2026-08-17 19:23:25", "severity": "MEDIUM", "rule": "Port Scan", "mitre_tactic": "T1046", "source_ip": "127.0.0.1", "details": "Signature: Nmap"}
+{"alert_id": "ALERT-0004", "timestamp": "2026-08-17 19:23:25", "severity": "HIGH", "rule": "XSS Attack", "mitre_tactic": "T1189", "source_ip": "127.0.0.1", "details": "Payload: <script>"}
+{"alert_id": "ALERT-0005", "timestamp": "2026-08-17 19:23:25", "severity": "MEDIUM", "rule": "Sudo Auth Fail", "mitre_tactic": "T1548", "source_ip": "127.0.0.1", "details": "Failed root escalation"}
+{"alert_id": "ALERT-0006", "timestamp": "2026-08-17 19:23:25", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre_tactic": "T1110", "source_ip": "203.0.113.50", "details": "TArget USer:root"}
+{"alert_id": "ALERT-0001", "timestamp": "2026-08-17 20:03:16", "severity": "MEDIUM", "rule": "Sudo Auth Fail", "mitre_tactic": "T1548", "source_ip": "127.0.0.1", "details": "Failed root escalation"}
+{"alert_id": "ALERT-0002", "timestamp": "2026-08-17 20:05:56", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre_tactic": "T1110", "source_ip": "192.168.1.99", "details": "TArget USer:root"}
+{"alert_id": "ALERT-0003", "timestamp": "2026-08-17 20:06:41", "severity": "HIGH", "rule": "XSS Attack", "mitre_tactic": "T1189", "source_ip": "127.0.0.1", "details": "Payload: <script>"}
+{"id": "ALERT-0001", "time": "2026-08-19 10:51:16", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0002", "time": "2026-08-19 10:51:17", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0003", "time": "2026-08-19 10:51:18", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0004", "time": "2026-08-19 10:51:18", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0005", "time": "2026-08-19 10:52:04", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0006", "time": "2026-08-19 10:52:04", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0007", "time": "2026-08-19 10:52:04", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0008", "time": "2026-08-19 10:52:05", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0001", "time": "2026-08-19 10:52:44", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0002", "time": "2026-08-19 10:52:53", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0003", "time": "2026-08-19 10:52:53", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}
+{"id": "ALERT-0004", "time": "2026-08-19 10:52:54", "severity": "CRITICAL", "rule": "SSH Brute Force", "mitre": "T1110", "ip": "200.100.50.25"}

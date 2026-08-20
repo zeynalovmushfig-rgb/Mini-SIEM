@@ -1,0 +1,7 @@
+{
+    "SSH_BRUTE_PATTERN": "Failed password.*from\\s+([0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)",
+    "PORT_SCAN_PATTERN": "(Nmap|portscan|DPT=\\d+)",
+    "SQLI_PATTERN": "(UNION|SELECT|OR 1=1)",
+    "XSS_PATTERN": "(<script>|alert\\()",
+    "SUDO_FAIL_PATTERN": "(authentication failure)"
+}

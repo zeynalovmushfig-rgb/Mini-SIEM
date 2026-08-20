@@ -1,7 +1,7 @@
 # Mini-SIEM: Canli log analizi ve Tehdit Avciligi
 Bu proje,Linux sistemlerindeki kimlik dogrulama loglarini ('/var/log/auth.log') canli olarak izeyen,Regex ile IP tespiti yapan ve supheli guvenlik olaylarini kategorize ederek alarm ureten Python tabanli bir **SOC Tehdit Tespit Mekanizmasidir**
 
---Ozellikler
+##Ozellikler
 
 1.SSH Brute-Force Tespiti (Critical):Belirli bir IP adresinden gelen basarisiz giris denemelerini IP bazli olarak takip eder.Esik deger(3) asildiginda kritik alarm uretir.
 
@@ -10,7 +10,7 @@ Bu proje,Linux sistemlerindeki kimlik dogrulama loglarini ('/var/log/auth.log') 
 3.Port Tarama / Nmap TEspiti(Medium):Ag taramasi ve kesif aktivitelerine ait izleri tespit eder.
 
 
---Kurulum ve Calistirma
+##Kurulum ve Calistirma
 
 Projeyi klonlayip calistirmak icin:
 
