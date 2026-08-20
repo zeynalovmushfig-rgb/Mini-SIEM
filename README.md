@@ -18,3 +18,6 @@ Mini-SIEM is a custom-built, lightweight Security Information and Event Manageme
 
 ##  Why I Built This?
 I built this project to move beyond theoretical SOC analysis. Instead of just reading logs on platforms, I wanted to understand the core mechanics of how a SIEM parses data and how an IPS takes automated action against threats.
+
+## Feedback & Code Review
+I am continuously learning and improving my skills. If you spot any bugs, security flaws, or have suggestions for optimization in my code, please feel free to reach out or open an issue on GitHub. I'm always open to constructive feedback and code reviews!
